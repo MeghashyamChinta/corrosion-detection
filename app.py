@@ -7,7 +7,7 @@ from PIL import Image
 # --- Load the Model ---
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model(r"C:\Users\MeghashyamChinta\OneDrive - ValueMomentum, Inc\Documents\Phase5_Capstone-Project-main\Phase5_Capstone-Project-main\test_model_weights\saved_model.h5")
+    model = tf.keras.models.load_model(r"saved_model.h5")
     return model
 
 model = load_model()
